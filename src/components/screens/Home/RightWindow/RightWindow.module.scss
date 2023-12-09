@@ -1,0 +1,81 @@
+.rightWindow {
+  padding-left: 50px;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.card {
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 700px;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px 60px 30px;
+  margin-top: 78px;
+}
+
+.good {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.productName {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  line-height: 27px;
+}
+
+.productName:hover {
+  opacity: 0.7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 580px;
+  bottom: 30px;
+}
+
+.arrow {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 17px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.arrowContainer {
+  min-width: 40px;
+}
+.arrowContainerRight {
+  min-width: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.endList {
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}

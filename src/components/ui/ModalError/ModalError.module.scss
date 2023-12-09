@@ -1,0 +1,32 @@
+@keyframes showModalError {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modalError {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 270px;
+  padding: 10px;
+  background-color: #ed4337;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: showModalError 0.4s ease-out;
+  display: none;
+  font-size: 14px;
+}
+
+.modalErrorShow {
+  display: flex;
+}

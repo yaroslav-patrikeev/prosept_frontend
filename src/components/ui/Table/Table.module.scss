@@ -1,0 +1,105 @@
+@import 'src/styles/variables';
+
+.table {
+  width: 1000px;
+  border: solid #ccc 1px;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px #ccc;
+  border-spacing: 0;
+}
+
+.table td,
+.table th {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: $light-green;
+  background-image: linear-gradient($extra-light-green, $light-green);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  border-top: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.badResponse {
+  font-size: large;
+  font-weight: 700;
+  margin-top: 70px;
+  min-width: 1000px;
+}
+
+.table td:first-child,
+.table th:first-child {
+  border-left: none;
+}
+
+.table th:first-child {
+  border-radius: 6px 0 0 0;
+}
+
+.table th:last-child {
+  border-radius: 0 6px 0 0;
+}
+
+.table th:only-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.table tr:last-child td:first-child {
+  border-radius: 0 0 0 6px;
+}
+
+.table tr:last-child td:last-child {
+  border-radius: 0 0 6px 0;
+}
+
+.table td {
+  position: relative;
+}
+
+.tableNumber {
+  width: 40px;
+  box-sizing: border-box;
+}
+
+.tableStatus {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.tableNumberInList {
+  width: 60px;
+  box-sizing: border-box;
+}
+
+.tableGood {
+  text-align: left !important;
+}
+
+.deleteIcon {
+  width: 40px;
+  box-sizing: border-box;
+}
+
+.deleteIcon button {
+  background: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover {
+    opacity: 0.6;
+  }
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  &:active {
+    transform: scale(1.1);
+  }
+  &:disabled {
+    cursor: default;
+  }
+}

@@ -1,0 +1,62 @@
+@import 'src/styles/variables';
+
+.leftWindow {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: center;
+  width: 400px;
+}
+
+.search {
+  box-sizing: border-box;
+  width: 400px;
+  height: 38px;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease-in-out;
+  padding: 0;
+}
+
+.search:focus {
+  border-bottom: 1px solid $light-green;
+}
+
+.list {
+  position: relative;
+  list-style-type: none;
+  width: 100%;
+  margin-top: 35px;
+  padding: 0 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar transparent;
+  max-height: 300px;
+  height: 300px;
+}
+
+.blockFilter {
+  height: 28px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.filter {
+  padding: 6px;
+  border: 1px solid hsl(0, 0%, 80%);
+  outline: 0;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  color: hsl(0, 0%, 30%);
+}

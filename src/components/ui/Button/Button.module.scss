@@ -1,0 +1,43 @@
+@import 'src/styles/variables';
+
+.blackButton {
+  padding: 0;
+  outline: 0;
+  height: 50px;
+  min-width: 140px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+.greenButton {
+  height: 50px;
+  min-width: 200px;
+  color: #7e9c88;
+  font-weight: 600;
+  border: 1px solid $light-green;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  &:hover {
+    background-color: $dark-green-transparent;
+  }
+  &:active {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,45 @@
+@import 'src/styles/variables';
+
+.main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.buttonsResult {
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+  margin-top: 40px;
+  padding: 50px 0;
+  text-align: center;
+  border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+.buttonResult {
+  height: 50px;
+  min-width: 200px;
+  color: #7e9c88;
+  font-weight: 600;
+  border: 1px solid $light-green;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  &:hover {
+    background-color: rgba(46, 125, 50, 0.07);
+  }
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+.selectedItem {
+  font-weight: 700;
+  font-size: larger;
+}

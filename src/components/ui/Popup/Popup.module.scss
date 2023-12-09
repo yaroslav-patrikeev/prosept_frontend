@@ -1,0 +1,61 @@
+@import 'src/styles/variables';
+
+.wrapper {
+  position: fixed;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  min-width: 700px;
+  min-height: 500px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.content {
+  max-height: calc(100% - 30px);
+  height: calc(100% - 30px);
+  padding: 30px 70px 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar transparent;
+}
+
+.close {
+  z-index: 2;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.close svg {
+  fill: white;
+  font-size: 40px;
+}
+
+.close:hover {
+  opacity: 0.7;
+}

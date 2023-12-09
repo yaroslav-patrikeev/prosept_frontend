@@ -1,0 +1,32 @@
+.proseptItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-radius: 10px;
+  transition: border 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 16px;
+  width: 95%;
+  line-height: 23px;
+}
+
+.name {
+  max-width: 300px;
+}
+
+li input[type='radio']:checked + .proseptItem {
+  background-color: #b5e0c3;
+}
+
+.proseptItem:hover {
+  border: 1px solid #b5e0c3;
+}
+
+.radio:checked {
+  border: 2px solid #b5e0c3;
+}
+
+.radio {
+  display: none;
+}

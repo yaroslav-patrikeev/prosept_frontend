@@ -16,7 +16,7 @@ Frontend для проекта хакатона от "Яндекс.Практи�
 - Клонировать репозиторий и перейти в него
 
 ```sh
-git clone git@github.com:olgushe4ka/prosept_frontend.git
+git clone git@github.com:yaroslav-patrikeev/prosept_frontend.git
 cd prosept_frontend
 ```
 
